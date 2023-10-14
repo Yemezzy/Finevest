@@ -451,7 +451,7 @@ const Startpage = () => {
         </div>
 
         <div className="bg-black text-white">
-          <Switch />
+          {/* <Switch /> */}
         </div>
       </div>
     </div>
