@@ -565,7 +565,11 @@ const Startpage = () => {
                   <p className="text-sm">Entrepreneur</p>
                 </section>
 
-                <section className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full border-2"></section>
+                <img
+                  className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full"
+                  src="https://globalswiftpro.com/asset/theme1/images/testimonial/61fd4de828e951643990504.jpg"
+                  alt=""
+                />
               </div>
 
               <p className="mt-3 md:text-base text-sm font-medium">
@@ -584,7 +588,11 @@ const Startpage = () => {
                   <p className="text-sm">Crypto Trader</p>
                 </section>
 
-                <section className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full border-2"></section>
+                <img
+                  className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full "
+                  src="https://globalswiftpro.com/asset/theme1/images/testimonial/61fd4e4f859dd1643990607.jpg"
+                  alt=""
+                />
               </div>
 
               <p className="mt-3 md:text-base text-sm font-medium">
@@ -601,7 +609,13 @@ const Startpage = () => {
                   <p className="text-sm">Investor since 2019</p>
                 </section>
 
-                <section className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full border-2"></section>
+            
+                  <img
+                    className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full "
+                    src="https://globalswiftpro.com/asset/theme1/images/testimonial/6253da0b3e71e1649662475.jpg"
+                    alt=""
+                  />
+              
               </div>
 
               <p className="mt-3  md:text-base text-sm  font-medium">
