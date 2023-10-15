@@ -54,3 +54,11 @@
   background: white;
   border-radius: inherit;
 }
+.bb{
+    fill: #F9A403;
+    /* color: #F9A403; */
+    background-color: #F9A4030F;
+    border-style: solid;
+    border-color: #F9A403;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

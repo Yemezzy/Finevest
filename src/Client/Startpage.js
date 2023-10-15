@@ -10,7 +10,11 @@ import {
   FaMobileAlt,
   FaUserLock,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
 import Lottie from "lottie-react";
 import wallet from "./Components/animation_lnkbooh5.json";
 import world from "./Components/azA1eXvhH4.json";
@@ -55,7 +59,7 @@ const Startpage = () => {
                 <span className="md:text-xl text-sm text-[#FFA500] font-bold">
                   $198.76B
                 </span>{" "}
-                <br /> COOL NUMBER
+                <br /> COOL <br className="md:hidden block" /> NUMBER
               </p>
               <p
                 className="border-l-2 text-center md:text-xs text-[10px] text-gray-400"
@@ -248,7 +252,7 @@ const Startpage = () => {
               provide a 24/7 live customer support.
             </p>
 
-            <div className="flex mt-7 md:text-sm text-[8.5px] gap-2">
+            <div className="flex mt-7 md:text-sm text-[10px] gap-2">
               <button className="px-3 lololo py-2 rounded-sm">Read More</button>
               <button className="px-3 py-2 rounded-sm bg-[#FFA500]">
                 VIEW COMPANY REGISTRATION
@@ -298,7 +302,7 @@ const Startpage = () => {
             </section>
 
             <section className="flex md:h-[10rem] md:md-0 mb-3 border-2 p-5 border-[#F9A403]  items-center gap-3">
-              <FaCreativeCommonsShare className="md:w-24 md:h-24 w-7 h-7 text-[#F9A403]" />
+              <FaCreativeCommonsShare className="md:w-24 md:h-24 w-10 h-10 text-[#F9A403]" />
               <div className="">
                 <p className="md:text-xl font-semibold mt-3">HIGH LIQUIDITY</p>
                 <p className="text-sm pr-5 text-[#969696] ">
@@ -308,7 +312,7 @@ const Startpage = () => {
             </section>
 
             <section className="flex md:h-[10rem] border-2 p-5 border-[#F9A403]  items-center gap-3">
-              <FaAmazonPay className="md:w-20 md:h-20 w-7 h-7 text-[#F9A403]" />
+              <FaAmazonPay className="md:w-20 md:h-20 w-10 h-10 text-[#F9A403]" />
               <div className="">
                 <p className="md:text-xl font-semibold mt-3">PAYMENT OPTIONS</p>
                 <p className="text-sm pr-5 text-[#969696] ">
@@ -338,120 +342,309 @@ const Startpage = () => {
           </p>
 
           <div className="md:grid grid-cols-3 bbn gap-5">
-            <section className="h-[12rem] mb-3 md:mb-0 rounded-md p-5 border-[#F9A403] border-l-8 border-b-8  ">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
               <div className="flex items-center">
-                <p className="p-3 bg-[#F9A403] rounded-lg w-[3.5rem] text-center text-xl font-extrabold">
+                <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center m:text-xl font-extrabold">
                   1.
                 </p>
 
-                <p className="md:text-2xl text-xl font-bold ml-5">Sign up:</p>
+                <p className="md:text-2xl text-lg font-bold ml-5">Sign up:</p>
               </div>
-              <p className="mt-3 text-lg">
+              <p className="mt-3 md:text-lg">
                 Create an account on FineVest by providing your details
                 securely.
               </p>
             </section>
 
-            <section className="h-[12rem] mb-3 md:mb-0 rounded-md p-5 border-[#F9A403] border-l-8 border-b-8  ">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
               <div className="flex items-center">
-                <p className="p-3 bg-[#F9A403] rounded-lg w-[3.5rem] text-center text-xl font-extrabold">
+                <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   2.
                 </p>
 
-                <p className="md:text-2xl text-xl font-bold ml-5">
+                <p className="md:text-2xl text-lg font-bold ml-5">
                   Verify identity:
                 </p>
               </div>
-              <p className="mt-3 text-lg">
+              <p className="mt-3 mb:text-lg">
                 Complete the KYC process to ensure a safe and compliant
                 investment environment.
               </p>
             </section>
 
-            <section className="h-[12rem] mb-3 md:mb-0 rounded-md p-5 border-[#F9A403] border-l-8 border-b-8  ">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
               <div className="flex items-center">
-                <p className="p-3 bg-[#F9A403] rounded-lg w-[3.5rem] text-center text-xl font-extrabold">
+                <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   3.
                 </p>
 
-                <p className="md:text-2xl text-xl font-bold ml-5">
+                <p className="md:text-2xl text-lg font-bold ml-5">
                   Deposit funds:
                 </p>
               </div>
-              <p className="mt-3 text-lg">
+              <p className="mt-3 md:text-lg">
                 Fund your account using various payment options, including
                 cryptocurrencies and fiat.
               </p>
             </section>
 
-            <section className="h-[12rem] mb-3 md:mb-0 rounded-md p-3 border-[#F9A403] border-l-8 border-b-8  ">
+            <section className="mb-5 md:mb-0 rounded-md p-3 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
               <div className="flex items-center">
-                <p className="p-3 bg-[#F9A403] rounded-lg w-[3.5rem] text-center text-xl font-extrabold">
+                <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   4.
                 </p>
 
-                <p className="md:text-2xl text-xl mb-3 md:mb-0 font-bold ml-5">
+                <p className="md:text-2xl text-lg mb-3 md:mb-0 font-bold ml-5">
                   Explore assets:
                 </p>
               </div>
-              <p className="my-3 text-lg">
+              <p className="my-3 md:text-lg">
                 Browse a diverse range of investment packages and select the
                 ones that align with your investment goals.
               </p>
             </section>
 
-            <section className="h-[12rem] mb-3 md:mb-0 rounded-md p-5 border-[#F9A403] border-l-8 border-b-8  ">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
               <div className="flex items-center">
-                <p className="p-3 bg-[#F9A403] rounded-lg w-[3.5rem] text-center text-xl font-extrabold">
+                <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   5.
                 </p>
 
-                <p className="md:text-2xl text-xl font-bold ml-5">
+                <p className="md:text-2xl text-lg font-bold ml-5">
                   Invest & monitor:
                 </p>
               </div>
-              <p className="mt-3 text-lg">
+              <p className="mt-3 md:text-lg">
                 Make your investments and keep track of your portfolio's
                 performance in real-time.
               </p>
             </section>
 
-            <section className="h-[12rem] rounded-md p-5 border-[#F9A403] border-l-8 border-b-8 ">
+            <section className="rounded-md p-5 border-[#F9A403] border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8 ">
               <div className="flex items-center">
-                <p className="p-3 bg-[#F9A403] rounded-lg w-[3.5rem] text-center text-xl font-extrabold">
+                <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   6.
                 </p>
 
-                <p className="md:text-2xl text-xl font-bold ml-5">
+                <p className="md:text-2xl text-lg font-bold ml-5">
                   Withdraw profits:
                 </p>
               </div>
-              <p className="mt-3 text-lg">
+              <p className="mt-3 md:text-lg">
                 Withdraw your profits effortlessly whenever you desire.
               </p>
             </section>
           </div>
         </div>
 
-        <div className="md:px-14 px-5 bg-black pb-10">
-          <section className="bg-[#2D2D2D] text-center text-white md:flex items-center justify-between md:px-10 p-3 rounded-lg md:h-[10rem]">
+        <div className="md:px-14 px-5 bg-black py-10">
+          <section className="bg-[#242323] md:text-left text-center text-white md:flex items-center justify-between md:px-10 p-3 rounded-lg md:h-[10rem]">
             <div>
-              <p className="md:text-xl text-lg font-medium md:font-bold">
+              <p className="md:text-xl mt-2 text-[#beb9b9] text-lg font-medium md:font-bold">
                 GET STARTED TODAY WITH BITCOIN AND ETHEREUM INVESTMENT
               </p>
-              <p className="md:text-lg md:my-0 my-3 text-sm font-medium">
+              <p className="md:text-lg text-[#beb9b9] md:my-0 mt-2 text-sm font-medium">
                 Open account for free start investing & trading
               </p>
             </div>
 
-            <button className="bg-[#F9A403] text-sm font-bold rounded-lg w-full md:w-[10rem] h-[3rem]">
+            <button className="bg-[#F9A403] mt-5 md:mt-0 text-sm font-bold rounded-lg w-full md:w-[10rem] h-[3rem]">
               REGISTER NOW
             </button>
           </section>
         </div>
 
-        <div className="bg-black text-white">
-          {/* <Switch /> */}
+        <div className="text-white md:px-14 px-5 mt-10 md:mt-20">
+          <p className="md:text-4xl text-left md:text-center text-2xl pb-5 md:pb-10 uppercase font-bold ">
+            FAQ
+          </p>
+
+          <div className="md:grid mt-  gap-3 md:grid-cols-2">
+            <section className="h-fit">
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>
+                    {" "}
+                    <p className="font-semibold">How does it work?</p>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </section>
+
+            <section className="h-fit font-bold mt-2 md:mt-0">
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>
+                    <p className="font-semibold">Can I trust you?</p>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </section>
+
+            <section className="h-fit mt-2 md:mt-0">
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>
+                    {" "}
+                    <p className="font-semibold">
+                      What types of NFT can be Staked?
+                    </p>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </section>
+
+            <section className="h-fit mt-2 md:mt-0">
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>
+                    <p className="font-semibold">
+                      Do I need to tell you all my passwords?
+                    </p>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </section>
+          </div>
+        </div>
+
+        <div className="md:pt-28 pt-16  md:px-14 px-5 text-white">
+          <p className="md:text-4xl md:pt-10 text-center text-xl pb-5 md:pb-10 uppercase font-bold ">
+            What <span className="text-[#F9A403]">our clients</span> say
+          </p>
+
+          <div className="md:grid grid-cols-3 gap-5 pb-10">
+            <section className="md:mb-0 mb-5 p-3 bb shadow-md shadow-[#F9A403]">
+              <div className="flex justify-between items-center pr-5">
+                <section>
+                  <p className="text-xl  md:mt-10 font-semibold">Sarah L.</p>
+                  <p className="text-sm">Entrepreneur</p>
+                </section>
+
+                <section className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full border-2"></section>
+              </div>
+
+              <p className="mt-3 md:text-base text-sm font-medium">
+                The team at GlobalSwiftPro is knowledgeable and responsive.
+                Their continuous efforts to enhance the platform show their
+                commitment to customer success.
+              </p>
+            </section>
+
+            <section className="md:mb-0 mb-5 p-3 bb shadow-md shadow-[#F9A403]">
+              <div className="flex justify-between items-center pr-5">
+                <section>
+                  <p className="text-xl  md:mt-10 font-semibold">
+                    Williams Jameson
+                  </p>
+                  <p className="text-sm">Crypto Trader</p>
+                </section>
+
+                <section className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full border-2"></section>
+              </div>
+
+              <p className="mt-3 md:text-base text-sm font-medium">
+                As a crypto enthusiast, I was looking for a trustworthy platform
+                to diversify my investments. GlobalSwiftPro not only met my
+                expectations but exceeded them.
+              </p>
+            </section>
+
+            <section className="md:mb-0 p-3 bb shadow-md shadow-[#F9A403]">
+              <div className="flex justify-between items-center pr-5">
+                <section>
+                  <p className="text-xl md:mt-10 font-semibold">John D</p>
+                  <p className="text-sm">Investor since 2019</p>
+                </section>
+
+                <section className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full border-2"></section>
+              </div>
+
+              <p className="mt-3  md:text-base text-sm  font-medium">
+                GlobalSwiftPro has transformed my approach to investing. The
+                platform's ease of use and valuable insights have helped me
+                achieve impressive returns.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <div className="text-[#F9A403] text-lg text-center font-extrabold mt-16 mt:mt-28 py-3 border-y border-[#343434]">
+          FINEVEST
+        </div>
+        <div className="text-[#737171] border-b border-[#343434] md:px-14 px-5 py-10 text-sm">
+          <p>
+            Finvest (Incorporation number : 03058359 ) been confirmedby entering
+            the data in the UK Companies House Register. Our budding company
+            offers a highly profitable investment for everyone. Years of trading
+            experience in the multi-currency markets provide a stable income not
+            only for company but also for numerous clients around the world.
+            Today professional team of traders is willing to offer investment
+            services of international class. With the development of
+            cryptocurrency exchanges we are to carry on non-stop trade and
+            predict the movement of Bitcoin exchange rate in order to maximize
+            profits. Big Apple Investment uses SSL (Secure Socket Layer)
+            technology to encrypt your transactions and keep your personal
+            information as secure as possible. This automated technology is used
+            by major banks and other financial companies who have information on
+            the web. Most browsers support SSL encryption, however, if for any
+            reason your browser is not able to support the technology., you will
+            receive an instant notification. You can verify wether web page is
+            SSL compliant by checking the address. It should start with
+            "https://..." - the "s"stands for "secure". Prices displayed on the
+            website may be affected by exchange rate and price movements thereby
+            affecting your investment return therefrom. FINVEST LTD is
+            registered in, First Floor Thavies Inn, 3-4 Holborn Circus, London,
+            EC1N 2HA, UK |
+          </p>
+        </div>
+
+        <div className="text-center text-[#F9A403] p-2 text-xs">
+          <p>Copyright © 2021 FINVEST Limited. | All Rights Reserved</p>
         </div>
       </div>
     </div>

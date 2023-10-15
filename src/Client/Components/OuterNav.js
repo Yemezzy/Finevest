@@ -12,7 +12,7 @@ const OuterNav = () => {
           <img
             src="https://finvesthub.co/wp-content/uploads/2023/03/finvest-logo-1.png"
             alt=""
-            className="w-[30%] md:w-[15%]"
+            className="w-[40%] md:w-[15%]"
           />
 
           <ul className="text-white uppercase font-bold text-sm hidden md:flex w-[35rem] justify-between">
