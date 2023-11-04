@@ -1,28 +1,46 @@
 import React from 'react'
 import { useState } from 'react';
+// import { HiOutlineUser } from "react-icons/hi";
+import { LuUserPlus2, LuUserCheck2 } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 
 const OuterNav = () => {
   const [navbar, setNavbar] = useState("red");
 
   return (
-    <div>
-      <nav className="">
-        <div className="flex w-full red bg-black items-center p-7 px-5 md:px-10 justify-between">
+    <div className="">
+      <nav className="text-white fixed bg-white w-full transition ease-in-out z-50">
+        <div className="flex w-full relative red bg-black items-center p-7 px-5 md:px-10 justify-between">
           <img
-            src="https://finvesthub.co/wp-content/uploads/2023/03/finvest-logo-1.png"
+            src="../image/finvest-logo-1.png"
             alt=""
-            className="w-[40%] md:w-[15%]"
+            className="w-[30%] md:w-[15%]"
           />
 
-          <ul className="text-white uppercase font-bold text-sm hidden md:flex w-[35rem] justify-between">
-            <li className=" p-2 bbn">Home </li>
-            <li className=" p-2 bbn">Investment</li>
-            <li className=" p-2 bbn">plans </li>
-            <li className=" p-2 bbn">About</li>
-            <li className=" p-2 bbn">Contact</li>
-            <li className=" p-2 bbn">Blog</li>
+          <ul className=" uppercase font-bold text-sm hidden md:flex w-[25rem] justify-between">
+            <Link to="/">
+              <li className=" p-2 bbn">Home </li>
+            </Link>
+            <Link to="/investment-plans">
+              <li className=" p-2 bbn">Investment plans</li>
+            </Link>
+            <Link to="/About-us">
+              <li className=" p-2 bbn">About</li>
+            </Link>
+            <Link to="/contact-us">
+              <li className=" p-2 bbn">Contact</li>
+            </Link>
           </ul>
+
+          <div className="hidden md:flex font-bold text-sm  items-center justify-between">
+            <button className="px-2 border-r flex gap-1 items-center">
+              <LuUserCheck2 className=" text-white text-lg" /> Login
+            </button>
+            <button className="px-2 flex gap-1 items-center">
+              <LuUserPlus2 className="font-bold text-white text-lg" /> Sign up
+            </button>
+          </div>
         </div>
       </nav>
 

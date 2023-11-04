@@ -21,6 +21,9 @@ import world from "./Components/azA1eXvhH4.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Switch from "./Components/Switch";
+import Sector from "./Components/Api";
+import Testimonials from "./Components/Testimonials";
+import Footer from "./Components/Footer";
 
 const Startpage = () => {
   useEffect(() => {
@@ -31,7 +34,8 @@ const Startpage = () => {
 
   return (
     <div className="bg-black">
-      <div className="bg-black md:pt-14 hdhhd md:h-[100vh] text-white">
+      <OuterNav/>
+      <div className="bg-black md:pt-28 hdhhd md:h-[100vh] text-white">
         <div className="md:grid grid-cols-2 gap-2">
           <section className=" md:mt-10">
             <p
@@ -264,7 +268,7 @@ const Startpage = () => {
           </section>
         </div>
 
-        <div className="md:pt-24 pt-16 pl-5 md:pl-0 text-white bg-[black]">
+        <div className="md:pt-24 pt-16 px-5 md:pl-0 text-white bg-[black]">
           <p className="md:text-4xl text-2xl md:pb-10 uppercase font-bold mb-5 md:text-center">
             Why choose us
           </p>
@@ -335,6 +339,7 @@ const Startpage = () => {
             <p className="text-5xl font-bold text-[#F9A403]">FINEVEST</p>
           </div>
         </div>
+        <Sector />
 
         <div className="bg-black text-white px-5 md:px-14 pb-10 md:pb-0 py-20 md:py-28">
           <p className="md:text-4xl text-2xl pb-10 uppercase font-bold ">
@@ -342,7 +347,7 @@ const Startpage = () => {
           </p>
 
           <div className="md:grid grid-cols-3 bbn gap-5">
-            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403] md:h-[12rem] border-2">
               <div className="flex items-center">
                 <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center m:text-xl font-extrabold">
                   1.
@@ -356,7 +361,7 @@ const Startpage = () => {
               </p>
             </section>
 
-            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  md:h-[12rem] border-2">
               <div className="flex items-center">
                 <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   2.
@@ -372,7 +377,7 @@ const Startpage = () => {
               </p>
             </section>
 
-            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  md:h-[12rem] border-2">
               <div className="flex items-center">
                 <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   3.
@@ -388,7 +393,7 @@ const Startpage = () => {
               </p>
             </section>
 
-            <section className="mb-5 md:mb-0 rounded-md p-3 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
+            <section className="mb-5 md:mb-0 rounded-md p-3 border-[#F9A403] md:h-[12rem]  border-2">
               <div className="flex items-center">
                 <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   4.
@@ -404,7 +409,7 @@ const Startpage = () => {
               </p>
             </section>
 
-            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403]  border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8">
+            <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403] md:h-[12rem]  border-2">
               <div className="flex items-center">
                 <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   5.
@@ -420,7 +425,7 @@ const Startpage = () => {
               </p>
             </section>
 
-            <section className="rounded-md p-5 border-[#F9A403] border-l-4 border-b-4 md:h-[12rem] md:border-l-8 md:border-b-8 ">
+            <section className="rounded-md p-5 border-[#F9A403] md:h-[12rem]  md:border-2 ">
               <div className="flex items-center">
                 <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   6.
@@ -552,114 +557,16 @@ const Startpage = () => {
           </div>
         </div>
 
-        <div className="md:pt-28 pt-16  md:px-14 px-5 text-white">
-          <p className="md:text-4xl md:pt-10 text-center text-xl pb-5 md:pb-10 uppercase font-bold ">
+        <div className="md:pt-28 pt-16  md:px-10 px-5 text-white">
+          <p className="md:text-4xl md:pt-10 text-center text-xl pb-5 md:pb-5 uppercase font-bold ">
             What <span className="text-[#F9A403]">our clients</span> say
           </p>
 
-          <div className="md:grid grid-cols-3 gap-5 pb-10">
-            <section className="md:mb-0 mb-5 p-3 bb shadow-md shadow-[#F9A403]">
-              <div className="flex justify-between items-center pr-5">
-                <section>
-                  <p className="text-xl  md:mt-10 font-semibold">Sarah L.</p>
-                  <p className="text-sm">Entrepreneur</p>
-                </section>
-
-                <img
-                  className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full"
-                  src="https://globalswiftpro.com/asset/theme1/images/testimonial/61fd4de828e951643990504.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="mt-3 md:text-base text-sm font-medium">
-                The team at GlobalSwiftPro is knowledgeable and responsive.
-                Their continuous efforts to enhance the platform show their
-                commitment to customer success.
-              </p>
-            </section>
-
-            <section className="md:mb-0 mb-5 p-3 bb shadow-md shadow-[#F9A403]">
-              <div className="flex justify-between items-center pr-5">
-                <section>
-                  <p className="text-xl  md:mt-10 font-semibold">
-                    Williams Jameson
-                  </p>
-                  <p className="text-sm">Crypto Trader</p>
-                </section>
-
-                <img
-                  className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full "
-                  src="https://globalswiftpro.com/asset/theme1/images/testimonial/61fd4e4f859dd1643990607.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="mt-3 md:text-base text-sm font-medium">
-                As a crypto enthusiast, I was looking for a trustworthy platform
-                to diversify my investments. GlobalSwiftPro not only met my
-                expectations but exceeded them.
-              </p>
-            </section>
-
-            <section className="md:mb-0 p-3 bb shadow-md shadow-[#F9A403]">
-              <div className="flex justify-between items-center pr-5">
-                <section>
-                  <p className="text-xl md:mt-10 font-semibold">John D</p>
-                  <p className="text-sm">Investor since 2019</p>
-                </section>
-
-            
-                  <img
-                    className="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] rounded-full "
-                    src="https://globalswiftpro.com/asset/theme1/images/testimonial/6253da0b3e71e1649662475.jpg"
-                    alt=""
-                  />
-              
-              </div>
-
-              <p className="mt-3  md:text-base text-sm  font-medium">
-                GlobalSwiftPro has transformed my approach to investing. The
-                platform's ease of use and valuable insights have helped me
-                achieve impressive returns.
-              </p>
-            </section>
-          </div>
+      <Testimonials/> 
         </div>
 
-        <div className="text-[#F9A403] text-lg text-center font-extrabold mt-16 mt:mt-28 py-3 border-y border-[#343434]">
-          FINEVEST
-        </div>
-        <div className="text-[#737171] border-b border-[#343434] md:px-14 px-5 py-10 text-sm">
-          <p>
-            Finvest (Incorporation number : 03058359 ) been confirmedby entering
-            the data in the UK Companies House Register. Our budding company
-            offers a highly profitable investment for everyone. Years of trading
-            experience in the multi-currency markets provide a stable income not
-            only for company but also for numerous clients around the world.
-            Today professional team of traders is willing to offer investment
-            services of international class. With the development of
-            cryptocurrency exchanges we are to carry on non-stop trade and
-            predict the movement of Bitcoin exchange rate in order to maximize
-            profits. Big Apple Investment uses SSL (Secure Socket Layer)
-            technology to encrypt your transactions and keep your personal
-            information as secure as possible. This automated technology is used
-            by major banks and other financial companies who have information on
-            the web. Most browsers support SSL encryption, however, if for any
-            reason your browser is not able to support the technology., you will
-            receive an instant notification. You can verify wether web page is
-            SSL compliant by checking the address. It should start with
-            "https://..." - the "s"stands for "secure". Prices displayed on the
-            website may be affected by exchange rate and price movements thereby
-            affecting your investment return therefrom. FINVEST LTD is
-            registered in, First Floor Thavies Inn, 3-4 Holborn Circus, London,
-            EC1N 2HA, UK |
-          </p>
-        </div>
-
-        <div className="text-center text-[#F9A403] p-2 text-xs">
-          <p>Copyright © 2021 FINVEST Limited. | All Rights Reserved</p>
-        </div>
+  
+<Footer/>
       </div>
     </div>
   );
