@@ -7,7 +7,7 @@ const Investments = () => {
     <div className="bg-black ">
       <OuterNav />
 
-      <div className="pt-24 px-5 md:px-10 h-screen text-white">
+      <div className="pt-24 px-5 md:px-10 text-white">
         <p className="md:px-0 text-center md:mt-10 px-5 font-bold text-2xl md:pt-5 ">
           INVESTMENT
           <span className="text-[#FFA500] ml-2">PLANS</span>
@@ -145,7 +145,7 @@ const Investments = () => {
             <div className="mt-10 px-3 text-sm">
               <section className="w-full mt-3 pb-1 border-b  border-dashed justify-between flex items-center">
                 <p>Minimum amount</p>
-                <p>$20,00</p>
+                <p>$20,000</p>
               </section>
               <section className="w-full mt-3 pb-1 border-b  border-dashed justify-between flex items-center">
                 <p>Maximum amount</p>
@@ -166,7 +166,7 @@ const Investments = () => {
         </div>
       </div>
 
-      <div className="px-10 text-white">
+      <div className="px-10 mt-10 text-white">
         <p className="md:px-0  pb-3 px-5 uppercase font-bold text-2xl md:pt-5 ">
           Bitcoin
           <span className="text-[#FFA500] ml-2">Calculator</span>

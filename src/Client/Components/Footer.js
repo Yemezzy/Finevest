@@ -3,10 +3,26 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-      <div className="text-[#F9A403] text-lg text-center font-extrabold mt-16 mt:mt-28 py-3 border-y border-[#343434]">
-        FINVEST
+      <div className="text-center mt-16 mt:mt-28 py-3 border-y border-[#343434]">
+        <p className="text-[#F9A403]  font-extrabold text-lg "> FINVEST</p>
       </div>{" "}
       <div className="text-[#737171] border-b border-[#343434] md:px-14 px-5 py-10 text-sm">
+        <div className="mb-10 text-[#737171]  text-center">
+          <p className="text-2xl text-[#737171]  font-bold">Our newsletter</p>
+          <p>Sign up to receive investment news and bonuses</p>
+          <div className="flex justify-center">
+            <div className="mt-3 h-[3rem] flex items-center rounded-r-md rounded-l-md w-[25rem] border border-[#FFA500]">
+              <input
+                type="text"
+                className="outline-none w-full h-full bg-transparent px-3 rounded-sm"
+                placeholder="Enter youe email here"
+              />
+              <button className="text-xs h-full text-white uppercase py-2 rounded-r-md px-2 bg-[#FFA500]">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
         <p>
           Finvest (Incorporation number : 03058359 ) been confirmedby entering
           the data in the UK Companies House Register. Our budding company

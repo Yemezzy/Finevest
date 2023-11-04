@@ -34,8 +34,8 @@ const Startpage = () => {
 
   return (
     <div className="bg-black">
-      <OuterNav/>
-      <div className="bg-black md:pt-28 hdhhd md:h-[100vh] text-white">
+      <OuterNav />
+      <div className="bg-black md:py-28 hdhhd md: text-white">
         <div className="md:grid grid-cols-2 gap-2">
           <section className=" md:mt-10">
             <p
@@ -179,7 +179,24 @@ const Startpage = () => {
           </section>
         </div>
 
-        <div className="md:mt-28 mt-14 mb-20 px-5 md:px-0 md:ml-14 text-white ">
+        <div className="md:px-14 px-5 bg-black md:pt-20">
+          <section className="bg-[#242323] md:text-left text-center text-white md:flex items-center justify-between md:px-10 p-3 rounded-lg md:h-[10rem]">
+            <div>
+              <p className="md:text-xl mt-2 text-[#beb9b9] text-lg font-medium md:font-bold">
+                GET STARTED TODAY WITH BITCOIN AND ETHEREUM INVESTMENT
+              </p>
+              <p className="md:text-lg text-[#beb9b9] md:my-0 mt-2 text-sm font-medium">
+                Open account for free start investing & trading
+              </p>
+            </div>
+
+            <button className="bg-[#F9A403] mt-5 md:mt-0 text-sm font-bold rounded-lg w-full md:w-[10rem] h-[3rem]">
+              REGISTER NOW
+            </button>
+          </section>
+        </div>
+
+        <div className="md:mt-20 mt-14 mb-20 px-5 md:px-0 md:ml-14 text-white ">
           <p className="md:text-4xl text-xl font-bold mb-3">
             Calculate Earnings
           </p>
@@ -442,23 +459,6 @@ const Startpage = () => {
           </div>
         </div>
 
-        <div className="md:px-14 px-5 bg-black py-10">
-          <section className="bg-[#242323] md:text-left text-center text-white md:flex items-center justify-between md:px-10 p-3 rounded-lg md:h-[10rem]">
-            <div>
-              <p className="md:text-xl mt-2 text-[#beb9b9] text-lg font-medium md:font-bold">
-                GET STARTED TODAY WITH BITCOIN AND ETHEREUM INVESTMENT
-              </p>
-              <p className="md:text-lg text-[#beb9b9] md:my-0 mt-2 text-sm font-medium">
-                Open account for free start investing & trading
-              </p>
-            </div>
-
-            <button className="bg-[#F9A403] mt-5 md:mt-0 text-sm font-bold rounded-lg w-full md:w-[10rem] h-[3rem]">
-              REGISTER NOW
-            </button>
-          </section>
-        </div>
-
         <div className="text-white md:px-14 px-5 mt-10 md:mt-20">
           <p className="md:text-4xl text-left md:text-center text-2xl pb-5 md:pb-10 uppercase font-bold ">
             FAQ
@@ -562,11 +562,10 @@ const Startpage = () => {
             What <span className="text-[#F9A403]">our clients</span> say
           </p>
 
-      <Testimonials/> 
+          <Testimonials />
         </div>
 
-  
-<Footer/>
+        <Footer />
       </div>
     </div>
   );

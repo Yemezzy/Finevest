@@ -45,7 +45,7 @@ const Contact = () => {
           </section>
         </div>
 
-        <div className="pt-20 flex justify-center gap-5 items-center ">
+        <div className="pt-10 flex justify-center gap-5 items-center ">
           <section className=" w-[20rem] flex flex-col items-center p-5 text-center border">
             <p className="rounded-full w-20 h-20 text-black bg-[#FFA500] flex justify-center items-center">
               <HiOutlineMail className="w-7 h-7" />
