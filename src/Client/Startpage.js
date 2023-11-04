@@ -37,6 +37,16 @@ const Startpage = () => {
       <OuterNav />
       <div className="bg-black md:py-28 hdhhd md: text-white">
         <div className="md:grid grid-cols-2 gap-2">
+          <section
+            data-aos="zoom-in"
+            className="nnn flex md:hidden  h-[20rem] mr-5 justify-center items-center "
+          >
+            <img
+              className="w-[95%] md:mt-5 pt-7"
+              src="https://i.pinimg.com/564x/0b/f0/1a/0bf01a191e33eceb6651443a2ee490f8.jpg"
+              alt=""
+            />
+          </section>
           <section className=" md:mt-10">
             <p
               className="text-2xl md:text-4xl md:px-0 px-5 md:pl-14 font-extrabold"
@@ -97,7 +107,7 @@ const Startpage = () => {
 
           <section
             data-aos="zoom-in"
-            className="nnn flex  h-[20rem] mr-5 justify-center items-center "
+            className="nnn md:flex hidden h-[20rem] mr-5 justify-center items-center "
           >
             <img
               className="w-[95%] md:mt-5 pt-7"
@@ -290,7 +300,7 @@ const Startpage = () => {
             Why choose us
           </p>
 
-          <div className="md:px-20 md:pr-0 pr-5 gap-5 md:grid md:grid-flow-row justify-center grid-cols-3">
+          <div className="md:px-10 lg:px-20 md:pr-0 pr-5 gap-5 md:grid md:grid-flow-row justify-center md:grid-cols-2 lg:grid-cols-2">
             <section className="flex p-5 md:md-0 mb-3 border-2 border-[#F9A403] items-center gap-3">
               <FaUserLock className="md:w-24 md:h-24 w-7 h-7 text-[#F9A403]" />
               <div className="">
@@ -363,7 +373,7 @@ const Startpage = () => {
             How it work
           </p>
 
-          <div className="md:grid grid-cols-3 bbn gap-5">
+          <div className="md:grid lg:grid lg:grid-cols-3 md:grid-cols-2 bbn gap-5">
             <section className="mb-5 md:mb-0 rounded-md p-5 border-[#F9A403] md:h-[12rem] border-2">
               <div className="flex items-center">
                 <p className="p-3 bg-[#F9A403] md:py-3 py-2 rounded-lg md:w-[3.5rem] text-center m:text-xl font-extrabold">
@@ -558,7 +568,7 @@ const Startpage = () => {
         </div>
 
         <div className="md:pt-28 pt-16  md:px-10 px-5 text-white">
-          <p className="md:text-4xl md:pt-10 text-center text-xl pb-5 md:pb-5 uppercase font-bold ">
+          <p className="md:text-4xl md:pt-10 text-center text-xl md:pb-5 uppercase font-bold ">
             What <span className="text-[#F9A403]">our clients</span> say
           </p>
 

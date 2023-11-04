@@ -10,9 +10,9 @@ const Testimonials = () => {
   return (
     <div>
       {/* <Navbar /> */}
-      <div className="md:px-10 text-black px-5">
+      <div className="md:px-10 text-black">
         <div className="maquee block md:hidden h-[20rem] ">
-          <ul className="maqueee-content flex gap-3 my-10">
+          <ul className="maqueee-content flex gap-3 py-5 md:my-10">
             <li>
               {" "}
               <section className="w-[25rem] h-[15rem] pt-10 px-5 bg-[#F9FAFB]">

@@ -4,16 +4,16 @@ import Footer from '../Components/Footer';
 
 const Investments = () => {
   return (
-    <div className="bg-black ">
+    <div className="bg-black">
       <OuterNav />
 
-      <div className="pt-24 px-5 md:px-10 text-white">
+      <div className="pt-24 w-full px-5 md:px-10 text-white">
         <p className="md:px-0 text-center md:mt-10 px-5 font-bold text-2xl md:pt-5 ">
           INVESTMENT
           <span className="text-[#FFA500] ml-2">PLANS</span>
         </p>
 
-        <div className="grid grid-cols-4 gap-4 mt-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 md:grid-rows-none grid-rows-4 gap-4 mt-10">
           <section className=" border p-2 h-[20rem]">
             <p className="text-center text-sm mt-3 text-[#FFA500]">
               Starter Plan

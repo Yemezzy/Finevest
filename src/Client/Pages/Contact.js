@@ -17,7 +17,7 @@ const Contact = () => {
         </p>
 
         <div className="w-full">
-          <section className="px-20 mt-10">
+          <section className="md:px-20 mt-10">
             <div className="w-full gap-3 flex">
               <input
                 type="text"
@@ -45,8 +45,8 @@ const Contact = () => {
           </section>
         </div>
 
-        <div className="pt-10 flex justify-center gap-5 items-center ">
-          <section className=" w-[20rem] flex flex-col items-center p-5 text-center border">
+        <div className="pt-20 md:pt-10 md:flex justify-center gap-5 items-center ">
+          <section className=" mb-3 md:mb-0 md:w-[20rem] flex flex-col items-center p-5 text-center border">
             <p className="rounded-full w-20 h-20 text-black bg-[#FFA500] flex justify-center items-center">
               <HiOutlineMail className="w-7 h-7" />
             </p>
@@ -54,7 +54,7 @@ const Contact = () => {
             <p className="text-xs text-gray-400">ADMIN@FINVESTHUB.CO</p>
           </section>
 
-          <section className=" w-[20rem] flex flex-col items-center p-5 text-center border">
+          <section className=" mb-3 md:mb-0 md:w-[20rem] flex flex-col items-center p-5 text-center border">
             <p className="rounded-full w-20 h-20 text-black bg-[#FFA500] flex justify-center items-center">
               <GrLocation className="w-7 h-7" />
             </p>
@@ -65,18 +65,18 @@ const Contact = () => {
             </p>
           </section>
 
-          <section className=" w-[20rem] flex flex-col items-center p-5 text-center border">
+          <section className=" mb-3 md:mb-0 md:w-[20rem] flex flex-col items-center p-5 text-center border">
             <p className="rounded-full w-20 h-20 text-black bg-[#FFA500] flex justify-center items-center">
               <TbPhoneCall className="w-7 h-7" />
             </p>
             <p className="mt-5">Call:</p>
             <p className="text-xs text-gray-400">+1 3159928453</p>
           </section>
-              </div>
-              
-              <div>
-                  <Footer/>
-              </div>
+        </div>
+
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -42,7 +42,7 @@ const About = () => {
             fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
           ></rect>
         </svg>
-        <p className="md:px-0 px-5 font-bold text-2xl md:text-4xl md:pt-5 ">
+        <p className="md:px-0 md:text-left text-center px-5 font-bold text-2xl md:text-4xl md:pt-5 ">
           ABOUT
           <span className="text-[#FFA500] ml-2">US</span>
         </p>
