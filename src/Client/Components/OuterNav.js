@@ -11,7 +11,7 @@ const OuterNav = () => {
   return (
     <div className="">
       <nav className="text-white fixed bg-white w-full transition ease-in-out z-50">
-        <div className="flex w-full relative red bg-black items-center p-7 px-5 md:px-10 justify-between">
+        <div className="flex w-full relative red bg-black items-center py-5 px-5 md:px-10 justify-between">
           <img
             src="../image/finvest-logo-1.png"
             alt=""
@@ -34,12 +34,16 @@ const OuterNav = () => {
           </ul>
 
           <div className="hidden md:flex font-bold text-sm  items-center justify-between">
-            <button className="px-2 border-r flex gap-1 items-center">
-              <LuUserCheck2 className=" text-white text-lg" /> Login
-            </button>
-            <button className="px-2 flex gap-1 items-center">
-              <LuUserPlus2 className="font-bold text-white text-lg" /> Sign up
-            </button>
+            <Link to="">
+              <button className="px-2 border-r flex gap-1 items-center">
+                <LuUserCheck2 className=" text-white text-lg" /> Login
+              </button>
+            </Link>
+            <Link to="/sign-up">
+              <button className="px-2 flex gap-1 items-center">
+                <LuUserPlus2 className="font-bold text-white text-lg" /> Sign up
+              </button>
+            </Link>
           </div>
         </div>
       </nav>

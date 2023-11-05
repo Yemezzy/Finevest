@@ -36,10 +36,10 @@ const Startpage = () => {
     <div className="bg-black">
       <OuterNav />
       <div className="bg-black md:py-28 hdhhd md: text-white">
-        <div className="md:grid grid-cols-2 gap-2">
+        <div className="lg:grid grid-cols-2 gap-2">
           <section
             data-aos="zoom-in"
-            className="nnn flex md:hidden  h-[20rem] mr-5 justify-center items-center "
+            className="nnn flex pt-10 sm:mb-20 lg:hidden  h-[20rem] mr-5 justify-center items-center "
           >
             <img
               className="w-[95%] md:mt-5 pt-7"
@@ -65,7 +65,7 @@ const Startpage = () => {
               ab tempore impedit. Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Esse, saepe!
             </p>
-            <div className="grid mt-5 pr-2 items-end md:mt-10 md:pl-6 grid-cols-4">
+            <div className="grid my-5 pr-2 items-end md:mt-10 md:pl-6 grid-cols-4">
               <p
                 className="text-center md:text-xs text-[10px] text-gray-400"
                 data-aos="flip-left"
@@ -107,7 +107,7 @@ const Startpage = () => {
 
           <section
             data-aos="zoom-in"
-            className="nnn md:flex hidden h-[20rem] mr-5 justify-center items-center "
+            className="nnn lg:flex hidden h-[20rem] mr-5 justify-center items-center "
           >
             <img
               className="w-[95%] md:mt-5 pt-7"
@@ -189,7 +189,7 @@ const Startpage = () => {
           </section>
         </div>
 
-        <div className="md:px-14 px-5 bg-black md:pt-20">
+        <div className="md:px-14 px-5 bg-black pt-10 md:pt-20">
           <section className="bg-[#242323] md:text-left text-center text-white md:flex items-center justify-between md:px-10 p-3 rounded-lg md:h-[10rem]">
             <div>
               <p className="md:text-xl mt-2 text-[#beb9b9] text-lg font-medium md:font-bold">
@@ -300,7 +300,7 @@ const Startpage = () => {
             Why choose us
           </p>
 
-          <div className="md:px-10 lg:px-20 md:pr-0 pr-5 gap-5 md:grid md:grid-flow-row justify-center md:grid-cols-2 lg:grid-cols-2">
+          <div className="md:px-10 lg:px-20 md:pr-0 pr-5 gap-5 md:grid md:grid-flow-row justify-center md:grid-cols-2 lg:grid-cols-3">
             <section className="flex p-5 md:md-0 mb-3 border-2 border-[#F9A403] items-center gap-3">
               <FaUserLock className="md:w-24 md:h-24 w-7 h-7 text-[#F9A403]" />
               <div className="">
@@ -452,7 +452,7 @@ const Startpage = () => {
               </p>
             </section>
 
-            <section className="rounded-md p-5 border-[#F9A403] md:h-[12rem]  md:border-2 ">
+            <section className="rounded-md p-5 border-[#F9A403] md:h-[12rem] border-2 ">
               <div className="flex items-center">
                 <p className="p-3 md:py-3 py-2 bg-[#F9A403] rounded-lg md:w-[3.5rem] text-center md:text-xl font-extrabold">
                   6.
