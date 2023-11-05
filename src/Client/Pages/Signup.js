@@ -1,8 +1,11 @@
 import React from 'react'
 import OuterNav from '../Components/OuterNav'
 import Footer from '../Components/Footer';
+import { grey, green } from "@mui/material/colors";
+import Checkbox from "@mui/material/Checkbox";
 
 const Signup = () => {
+    const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
     <div className="bg-black text-white">
       <OuterNav />
@@ -58,10 +61,25 @@ const Signup = () => {
               <br />
               <input
                 type="text"
-                className="w-full mb-2 border outline-none bg-transparent px-2 h-[2rem]"
+                className="w-full mb-1 border outline-none bg-transparent px-2 h-[2rem]"
               />
-              <p className="text-xs">I Agree To The Terms and Conditions.</p>
-              <button className="w-full outline-none mt-2 bg-[#FFA500] px-2 h-[2rem]">
+              <p className="text-xs">
+                <span className="bg-whit w-fit text-white">
+                  <Checkbox
+                    {...label}
+                
+                    sx={{
+                      color: grey[50],
+                      "&.Mui-checked": {
+                        color: green[500],
+                      },
+                    }}
+                    size="small"
+                  />
+                </span>
+                I Agree To The Terms and Conditions.
+              </p>
+              <button className="w-full outline-none mt-1 bg-[#FFA500] px-2 h-[2rem]">
                 Sign Up
               </button>
             </div>
@@ -143,8 +161,8 @@ const Signup = () => {
               </p>
             </div>
           </div>
-              </div>
-              <Footer/>
+        </div>
+        <Footer />
       </div>
     </div>
   );
