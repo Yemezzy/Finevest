@@ -34,7 +34,7 @@ const OuterNav = () => {
           </ul>
 
           <div className="hidden md:flex font-bold text-sm  items-center justify-between">
-            <Link to="">
+            <Link to="/login">
               <button className="px-2 border-r flex gap-1 items-center">
                 <LuUserCheck2 className=" text-white text-lg" /> Login
               </button>

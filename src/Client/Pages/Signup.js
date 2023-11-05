@@ -10,7 +10,7 @@ const Signup = () => {
     <div className="bg-black text-white">
       <OuterNav />
       <div className="pt-24 w-full px-5 md:px-10 text-white">
-        <div className="pb-10 pt-5 hfhfhhf flex justify-center">
+        <div className="pb-10 pt-5 hfhfhhf md:flex justify-center">
           {/* <img
             className="w-[40%] md:block hidden pt-20"
             src="https://i.pinimg.com/564x/7f/ce/0f/7fce0f11acea7f6e161c3022580baf56.jpg"
@@ -85,7 +85,7 @@ const Signup = () => {
             </div>
           </section>
 
-          <div className="w-[60%] px-10">
+          <div className="md:w-[60%] md:mt-0 mt-10 md:px-10">
             <p className="md:text-xl md:pt-3  md:pb-5 uppercase font-bold ">
               Terms <span className="text-[#F9A403]">and</span> Conditions.
             </p>
