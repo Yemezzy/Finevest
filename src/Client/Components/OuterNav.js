@@ -3,6 +3,7 @@ import { useState } from 'react';
 // import { HiOutlineUser } from "react-icons/hi";
 import { LuUserPlus2, LuUserCheck2 } from "react-icons/lu";
 import { Link } from 'react-router-dom';
+import Dropmenu from './Dropmenu';
 
 
 const OuterNav = () => {
@@ -33,6 +34,9 @@ const OuterNav = () => {
             </Link>
           </ul>
 
+          <div className="h-[1rem]   md:hidden flex">
+            <Dropmenu className=" block" />
+          </div>
           <div className="hidden md:flex font-bold text-sm  items-center justify-between">
             <Link to="/login">
               <button className="px-2 border-r flex gap-1 items-center">
