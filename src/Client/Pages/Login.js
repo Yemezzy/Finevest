@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
 import { grey } from "@mui/material/colors";
 import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -69,7 +70,9 @@ const Login = () => {
               </button>
               <p className="text-xs mt-1">
                 Dont have an account with us?{" "}
-                <span className="text-[#FFA500]">Signup here</span>
+                <Link to="/sign-up">
+                  <span className="text-[#FFA500]">Signup here</span>
+                </Link>
               </p>
             </div>
           </section>
@@ -97,17 +100,16 @@ const Login = () => {
                   precision={0.5}
                   getLabelText={getLabelText}
                   onChange={(event, newValue) => {
-                      setValue(newValue);
-                      setTimeout(() => {
-                        setShow("Sent!!");
-                      }, 1000);
-                      setTimeout(() => {                       
-                          setShow("");
-                      }, 2000);
+                    setValue(newValue);
+                    setTimeout(() => {
+                      setShow("Sent!!");
+                    }, 1000);
+                    setTimeout(() => {
+                      setShow("");
+                    }, 2000);
                   }}
                   onChangeActive={(event, newHover) => {
-                      setHover(newHover);
-                      
+                    setHover(newHover);
                   }}
                   emptyIcon={
                     <StarIcon
@@ -121,12 +123,12 @@ const Login = () => {
                     {labels[hover !== -1 ? hover : value]}
                   </Box>
                 )}
-                          </Box>
-                          <p>{show}</p>
+              </Box>
+              <p>{show}</p>
             </div>
           </section>
-              </div>
-              <Footer/>
+        </div>
+        <Footer />
       </div>
     </div>
   );

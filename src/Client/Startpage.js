@@ -118,10 +118,12 @@ const Startpage = () => {
         </div>
       </div>
       <div className="text-lg bg-white font-bold">
-        <marquee behavior="" direction="">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam,
-          error!
-        </marquee>
+        <coingecko-coin-price-marquee-widget
+          coin-ids="bitcoin,ethereum,eos,ripple,litecoin"
+          currency="usd"
+          background-color="#ffffff"
+          locale="en"
+        ></coingecko-coin-price-marquee-widget>
       </div>
 
       <div className="md:pt-20 bnbnbn pt-10  bg-[black]">

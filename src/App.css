@@ -88,3 +88,35 @@
   background-position: center;
   background-size: cover;
 } */
+.rotating-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ro-img {
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.bbl{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+.mmm{
+  width: 100%;
+  /* height: 20rem; */
+}
+.msj{
+  box-sizing: border-box; 
+  display: block; 
+  height: 500px; 
+  width: 100%;
+}
+.bb{
+    fill: #F9A403;
+    /* color: #F9A403; */
+    background-color: #F9A4030F;
+    border-style: solid;
+    border-color: #F9A403;
+}

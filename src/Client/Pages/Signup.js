@@ -3,6 +3,7 @@ import OuterNav from '../Components/OuterNav'
 import Footer from '../Components/Footer';
 import { grey, green } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
     const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -67,7 +68,6 @@ const Signup = () => {
                 <span className="bg-whit w-fit text-white">
                   <Checkbox
                     {...label}
-                
                     sx={{
                       color: grey[50],
                       "&.Mui-checked": {
@@ -82,6 +82,12 @@ const Signup = () => {
               <button className="w-full outline-none mt-1 bg-[#FFA500] px-2 h-[2rem]">
                 Sign Up
               </button>
+              <p className="text-xs mt-1">
+                Already have an account with us?{" "}
+                <Link to="/login">
+                  <span className="text-[#FFA500]">Signin here</span>
+                </Link>
+              </p>
             </div>
           </section>
 
@@ -155,7 +161,7 @@ const Signup = () => {
                 If you have any questions or concerns about these Terms, please
                 contact us at{" "}
                 <a href="">
-                  <span className="underline">support@wealthfrontier.org</span>
+                  <span className="underline">ADMIN@FINVESTHUB.CO</span>
                 </a>
                 .
               </p>

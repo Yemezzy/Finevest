@@ -1,4 +1,10 @@
 import './App.css';
+import Dashboard from './Client/Backend/pages/Dashboard';
+import Deposit from './Client/Backend/pages/Deposit';
+import Home from './Client/Backend/pages/Home';
+import Investment from './Client/Backend/pages/Investment-plans';
+import Withdrawl from './Client/Backend/pages/Withdrawl';
+// import SideNav from './Client/Backend/components/SideNav';
 // import OuterNav from './Client/Components/OuterNav';
 import About from './Client/Pages/About';
 import Contact from './Client/Pages/Contact';
@@ -19,6 +25,11 @@ function App() {
         <Route path='/contact-us' element={<Contact/>}/>
         <Route path='/sign-up' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/Dashboard' element={<Home/>}/>
+        <Route path='/investment/Invest-now' element={<Investment/>}/>
+        <Route path='/deposit-funds' element={<Deposit/>}/>
+        <Route path='/withdraw-funds' element={<Withdrawl/>}/>
+        {/* <Route path='/sideNav' element={<SideNav/>}/> */}
       </Routes>
 
     </div>
