@@ -15,8 +15,8 @@ const Deposit = () => {
           </p>
         </div>
         <div className="md:mt-10 mt-5 md:flex justify-between items-center">
-          <section className="md:w-[58%] p-2   border-2 ">
-            <p className="text-[#FFA500] mb-5 text-lg font-semibold">
+          <section className="md:w-[58%] md:p-2 md:mb-0 mb-3  md:border-2 ">
+            <p className="text-[#FFA500] mb-5 md:text-lg font-semibold">
               Deposit with crypto curriency
             </p>
 

@@ -134,7 +134,7 @@ const MiniDrawer = ({ children }) => {
                   <img
                     src="../image/finvest-logo-1.png"
                     alt=""
-                    className="w-[50%] md:w-[35%]"
+                    className="w-[70%] md:w-[35%]"
                   />
                 </Typography>
               </Toolbar>
