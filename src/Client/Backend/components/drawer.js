@@ -134,7 +134,7 @@ const MiniDrawer = ({ children }) => {
                   <img
                     src="../image/finvest-logo-1.png"
                     alt=""
-                    className="w-[30%] md:w-[35%]"
+                    className="w-[50%] md:w-[35%]"
                   />
                 </Typography>
               </Toolbar>
@@ -143,7 +143,7 @@ const MiniDrawer = ({ children }) => {
             <section className="flex items-center gap-3 ">
               <div className="flex items-center border-2 border-[#F9A403] p-2 rounded-xl gap-1">
                 {/* <AccountBalanceWalletIcon /> */}
-                <ManageAccountsIcon className="text-2xl" />
+                <ManageAccountsIcon className="md:text-2xl text-lg" />
                 <p className="text-">$0.00</p>
               </div>
               <section></section>

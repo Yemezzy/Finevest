@@ -17,34 +17,34 @@ const Home = () => {
           </section>
 
           <div className="mt-5 md:flex">
-            <section className="md:w-[20rem] bb pr-0 p-10 rounded-md h-[10rem] border-2 ">
+            <section className="md:w-[20rem] bb pr-0 p-10 rounded-md h-[9rem] md:h-[10rem] border-2 ">
               <div className="flex gap-3 items-center">
-                <MdAccountBalanceWallet className="w-14 h-14 pt-2" />
-                <p className="mt-2 bbl font-bold text-2xl p-2 rounded-s-xl w-full bg-[#F9A403] text-white">
+                <MdAccountBalanceWallet className="md:w-14 w-10 h-10 md:h-14 pt-2" />
+                <p className="mt-2 bbl font-bold text-lg md:text-2xl p-2 rounded-s-xl w-full bg-[#F9A403] text-white">
                   $ 0.00
                 </p>
               </div>
-              <p className="mt-2 bbl text-lg">Account Balance</p>
+              <p className="mt-2 bbl md:text-lg">Account Balance</p>
             </section>
 
-            <section className="md:w-[20rem] rounded-md bb pr-0 p-10 md:mt-0 mt-3 md:ml-10 h-[10rem] border-2 ">
+            <section className="md:w-[20rem] rounded-md bb pr-0 p-10 md:mt-0 mt-3 md:ml-10 h-[9rem] md:h-[10rem] border-2 ">
               <div className="flex gap-3 items-center">
-                <MdAddCard className="w-14 h-14 pt-2" />
-                <p className="mt-2 bbl font-bold text-2xl p-2 rounded-s-xl w-full bg-[#F9A403]  text-white">
+                <MdAddCard className="md:w-14 w-10 h-10 md:h-14 pt-2" />
+                <p className="mt-2 bbl font-bold text-lg md:text-2xl  p-2 rounded-s-xl w-full bg-[#F9A403]  text-white">
                   $ 0.00
                 </p>
               </div>
-              <p className="mt-2 bbl text-lg">Total Deposit</p>
+              <p className="mt-2 bbl md:text-lg">Total Deposit</p>
             </section>
 
-            <section className="md:w-[20rem] w-full bb rounded pr-0 p-10 md:mt-0 mt-3 md:ml-10 h-[10rem] border-2">
+            <section className="md:w-[20rem] w-full bb rounded pr-0 p-10 md:mt-0 mt-3 md:ml-10 h-[9rem] md:h-[10rem] border-2">
               <div className="flex gap-3 items-center">
-                <FaHandHoldingUsd className="w-14 h-14" />
-                <p className="mt-2 bbl font-bold text-2xl p-2 rounded-s-xl w-full bg-[#F9A403]  text-white">
+                <FaHandHoldingUsd className="md:w-14 w-10 h-10 md:h-14" />
+                <p className="mt-2 bbl font-bold text-lg md:text-2xl p-2 rounded-s-xl w-full bg-[#F9A403]  text-white">
                   $ 0.00
                 </p>
               </div>
-              <p className="mt-2 bbl text-lg">Total Withdrawal</p>
+              <p className="mt-2 bbl md:text-lg">Total Withdrawal</p>
             </section>
           </div>
 
