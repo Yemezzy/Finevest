@@ -16,8 +16,8 @@ const Home = () => {
             </p>
           </section>
 
-          <div className="mt-5 flex">
-            <section className="w-[20rem] bb pr-0 p-10 rounded-md h-[10rem] border-2 ">
+          <div className="mt-5 md:flex">
+            <section className="md:w-[20rem] bb pr-0 p-10 rounded-md h-[10rem] border-2 ">
               <div className="flex gap-3 items-center">
                 <MdAccountBalanceWallet className="w-14 h-14 pt-2" />
                 <p className="mt-2 bbl font-bold text-2xl p-2 rounded-s-xl w-full bg-[#F9A403] text-white">
@@ -27,7 +27,7 @@ const Home = () => {
               <p className="mt-2 bbl text-lg">Account Balance</p>
             </section>
 
-            <section className="w-[20rem] rounded-md bb pr-0 p-10 ml-10 h-[10rem] border-2 ">
+            <section className="md:w-[20rem] rounded-md bb pr-0 p-10 md:mt-0 mt-3 md:ml-10 h-[10rem] border-2 ">
               <div className="flex gap-3 items-center">
                 <MdAddCard className="w-14 h-14 pt-2" />
                 <p className="mt-2 bbl font-bold text-2xl p-2 rounded-s-xl w-full bg-[#F9A403]  text-white">
@@ -37,7 +37,7 @@ const Home = () => {
               <p className="mt-2 bbl text-lg">Total Deposit</p>
             </section>
 
-            <section className="w-[20rem] bb rounded pr-0 p-10 ml-10 h-[10rem] border-2">
+            <section className="md:w-[20rem] w-full bb rounded pr-0 p-10 md:mt-0 mt-3 md:ml-10 h-[10rem] border-2">
               <div className="flex gap-3 items-center">
                 <FaHandHoldingUsd className="w-14 h-14" />
                 <p className="mt-2 bbl font-bold text-2xl p-2 rounded-s-xl w-full bg-[#F9A403]  text-white">
@@ -50,8 +50,8 @@ const Home = () => {
 
           <div className=" mt-16 ">
             <p className="mb-5 bbl text-lg font-semibold">Investment</p>
-            <div className="flex gap-7">
-              <section className="w-[15rem] bb rounded pl-0 p-5 h-[8rem] border-2">
+            <div className="md:flex flex-cols gap-7">
+              <section className="md:w-[15rem] bb rounded pl-0 p-5 h-[8rem] border-2">
                 <p className="mt-2 pl-2 bbl font-bold text-xl">$ 0.00</p>
                 <div className="flex items-center gap-2 mt-2 text-white w-full bg-[#F9A403]  p-1 rounded-e-xl">
                   <p className="bbl pl-2 ">Total Withdrawal</p>
@@ -59,7 +59,7 @@ const Home = () => {
                 </div>
               </section>
 
-              <section className="w-[15rem] rounded bb pl-0 p-5 h-[8rem] border-2 ">
+              <section className="md:w-[15rem] mt-3 rounded bb pl-0 p-5 h-[8rem] border-2 ">
                 <p className="mt-2 pl-2 bbl font-bold text-xl">$ 0.00</p>
                 <div className="flex items-center gap-2 text-white mt-2 w-full bg-[#F9A403]  p-1 rounded-e-xl">
                   <p className="bbl pl-2 ">Pending Investment</p>
@@ -67,7 +67,7 @@ const Home = () => {
                 </div>
               </section>
 
-              <section className="w-[15rem] rounded bb pl-0 p-5 h-[8rem] border-2">
+              <section className="md:w-[15rem] mt-3 rounded bb pl-0 p-5 h-[8rem] border-2">
                 <p className="mt-2 pl-2 bbl font-bold text-xl">$ 0.00</p>
                 <div className="flex items-center gap-2 text-white mt-2 w-full bg-[#F9A403]  p-1 rounded-e-xl">
                   <p className="bbl pl-2 ">Pending Withdraw</p>
@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
               </section>
 
-              <section className="w-[15rem] rounded pl-0 p-5 h-[8rem] border-2 bb">
+              <section className="md:w-[15rem] mt-3 rounded pl-0 p-5 h-[8rem] border-2 bb">
                 <p className="mt-2 pl-2 bbl font-bold text-xl">$ 0.00</p>
                 <div className="flex items-center gap-2 text-white w-full bg-[#F9A403] mt-2 p-1 rounded-e-xl">
                   <p className="bbl pl-2 ">Refferal Earn</p>

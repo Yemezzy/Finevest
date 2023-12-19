@@ -6,15 +6,15 @@ const Deposit = () => {
     <div>
       <MiniDrawer>
         <div>
-          <p className="md:px-0 px font-bold text-2xl md:pt-5 ">
+          <p className="md:px-0 px font-bold text-xl md:text-2xl md:pt-5 ">
             DEPOSIT
             <span className="text-[#FFA500] ml-2">FUNDS</span>
           </p>
-          <p className="mt-2">
+          <p className="md:mt-2 md:text-base text-sm">
             You can make your deposit through our platforms:
           </p>
         </div>
-        <div className="mt-10 md:flex justify-between items-center">
+        <div className="md:mt-10 mt-5 md:flex justify-between items-center">
           <section className="md:w-[58%] p-2   border-2 ">
             <p className="text-[#FFA500] mb-5 text-lg font-semibold">
               Deposit with crypto curriency

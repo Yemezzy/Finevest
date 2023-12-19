@@ -6,7 +6,7 @@ const Withdrawl = () => {
     <div>
       <MiniDrawer>
         <div>
-          <p className="md:px-0 px-5 font-bold text-2xl md:pt-5 ">
+          <p className="md:px-0 px-5 font-bold text-xl md:text-2xl md:pt-5 ">
             WITHDRAW
             <span className="text-[#FFA500] ml-2">FUNDS</span>
           </p>
