@@ -134,13 +134,19 @@ const MiniDrawer = ({ children }) => {
                   <img
                     src="../image/finvest-logo-1.png"
                     alt=""
-                    className="w-[70%] md:w-[35%]"
+                    className="w-[50%] hidden md:block md:w-[35%]"
                   />
                 </Typography>
               </Toolbar>
             </section>
 
-            <section className="flex items-center gap-3 ">
+            <img
+              src="../image/finvest-logo-1.png"
+              alt=""
+              className="w-[40%] md:hidden block md:w-[35%]"
+            />
+
+            <section className="md:flex hidden items-center gap-3 ">
               <div className="flex items-center border-2 border-[#F9A403] p-2 rounded-xl gap-1">
                 {/* <AccountBalanceWalletIcon /> */}
                 <ManageAccountsIcon className="md:text-2xl text-lg" />
@@ -239,32 +245,32 @@ const MiniDrawer = ({ children }) => {
                   </ListItemText>
                 </ListItemButton>
               </ListItem>
-                      </Link>
-                      <Link to="/withdraw-funds">
-            <ListItem disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
+            </Link>
+            <Link to="/withdraw-funds">
+              <ListItem disablePadding sx={{ display: "block" }}>
+                <ListItemButton
                   sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
+                    minHeight: 48,
+                    justifyContent: open ? "initial" : "center",
+                    px: 2.5,
                   }}
                 >
-                  <FaHandHoldingUsd className="w-6 h-6 text-black" />
-                </ListItemIcon>
-                <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                  {" "}
-                  Withdraw
-                </ListItemText>
-              </ListItemButton>
-            </ListItem>
-                      </Link>
+                  <ListItemIcon
+                    sx={{
+                      minWidth: 0,
+                      mr: open ? 3 : "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <FaHandHoldingUsd className="w-6 h-6 text-black" />
+                  </ListItemIcon>
+                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                    {" "}
+                    Withdraw
+                  </ListItemText>
+                </ListItemButton>
+              </ListItem>
+            </Link>
           </List>
           <Divider />
           <List>
