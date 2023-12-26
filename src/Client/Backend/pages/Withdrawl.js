@@ -11,17 +11,17 @@ const Withdrawl = () => {
             <span className="text-[#FFA500] ml-2">FUNDS</span>
           </p>
 
-          <div className="md:mt-5 mt-2">
+          <div className="md:mt-5">
             <p className="mt-2">
               {" "}
-              <span className="text-[#FFA500]">Note: </span>withdrawals are
+              <span className="text-[#FFA500] md:text-base text-sm">Note: </span>withdrawals are
               completed within 24hours
             </p>
           </div>
 
           <div>
             <p></p>
-            <div className="md:mt-2 mt-5 md:flex">
+            <div className="md:mt-2 text-sm md:text-base mt-5 md:flex">
               <section className="bb md:p-5 md:w-[50%]">
                 <label htmlFor="">Select Withdrawal method</label>
                 <br />
