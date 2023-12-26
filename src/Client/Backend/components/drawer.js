@@ -143,7 +143,7 @@ const MiniDrawer = ({ children }) => {
             <img
               src="../image/finvest-logo-1.png"
               alt=""
-              className="w-[40%] md:hidden block md:w-[35%]"
+              className=" md:hidden block w-[35%]"
             />
 
             <section className="md:flex hidden items-center gap-3 ">

@@ -56,7 +56,7 @@ const Deposit = () => {
           </section>
 
           <section className="md:w-[40%]  border-2 p-2">
-            <p className=" mb-5 text-lg">
+            <p className=" mb-5 text-sm md:text-lg">
               <p className="">
                 <span className="text-[#FFA500]  font-bold">
                   IMPORTANT NOTE :
@@ -110,7 +110,7 @@ const Deposit = () => {
             </button>
           </section>
 
-          <section className="md:w-[48%] h-[20rem] p-2">
+          <section className="md:w-[48%] md:h-[20rem] p-2">
             <p className="text-center mt-5">
               <span className="text-[#FFA500] text-lg  font-bold">
                 Trusted Collaboration With
@@ -133,8 +133,8 @@ const Deposit = () => {
             Deposit with Cashapp
           </p>
 
-          <div className='h-[15rem] flex justify-center items-center'>
-            <p className="text-3xl  font-bold">
+          <div className='h-[15rem] flex justify-center text-center items-center'>
+            <p className="md:text-3xl text-xl  font-bold">
               CASHAPP TEMPORARY UNAVILABLE!!
             </p>
           </div>

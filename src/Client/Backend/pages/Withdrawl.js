@@ -6,12 +6,12 @@ const Withdrawl = () => {
     <div>
       <MiniDrawer>
         <div>
-          <p className="md:px-0 px-5 font-bold text-xl md:text-2xl md:pt-5 ">
+          <p className="md:px-0 font-bold md:text-2xl md:pt-5 ">
             WITHDRAW
             <span className="text-[#FFA500] ml-2">FUNDS</span>
           </p>
 
-          <div className="mt-5">
+          <div className="md:mt-5 mt-2">
             <p className="mt-2">
               {" "}
               <span className="text-[#FFA500]">Note: </span>withdrawals are
@@ -21,8 +21,8 @@ const Withdrawl = () => {
 
           <div>
             <p></p>
-            <div className="mt-2 flex">
-              <section className="bb p-5 w-[50%]">
+            <div className="md:mt-2 mt-5 md:flex">
+              <section className="bb md:p-5 md:w-[50%]">
                 <label htmlFor="">Select Withdrawal method</label>
                 <br />
                 <select
@@ -87,7 +87,7 @@ const Withdrawl = () => {
                 </button>
               </section>
 
-              <section className="bg-[#FFA500] font-semibold text-lg p-5 h-fit text-black w-[50%]">
+              <section className="bg-[#FFA500] md:block hidden font-semibold text-lg p-5 h-fit text-black md:w-[50%]">
                 <p className=" text-center">WITHDRAWAL RESUME</p>
                 <div className="mt-10">
                   <p>
