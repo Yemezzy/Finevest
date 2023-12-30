@@ -25,10 +25,12 @@ import AddCardIcon from "@mui/icons-material/AddCard";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { Link } from "react-router-dom";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import Home from "../pages/Home";
 import Investment from "../pages/Investment-plans";
-import { Link } from "react-router-dom";
+
+import PersistentDrawerLeft from "./phone";
 
 
 const drawerWidth = 240;
@@ -111,247 +113,254 @@ const MiniDrawer = ({ children }) => {
   };
 
   return (
-    <div className="">
-      <Box sx={{ display: "flex" }}>
-        <CssBaseline />
-        <AppBar className="" position="fixed" open={open}>
-          <div className="flex justify-between items-center border-b- shadow-white shadow-sm pr-5 bg-black text-white">
-            <section>
-              <Toolbar>
-                <IconButton
-                  color="inherit"
-                  aria-label="open drawer"
-                  onClick={handleDrawerOpen}
-                  edge="start"
-                  sx={{
-                    marginRight: 5,
-                    ...(open && { display: "none" }),
-                  }}
-                >
-                  <MenuIcon />
+    <div>
+      <div className="md:block hidden">
+        <Box sx={{ display: "flex" }}>
+          <CssBaseline />
+          <AppBar className="" position="fixed" open={open}>
+            <div className="flex justify-between items-center border-b- shadow-white shadow-sm pr-5 bg-black text-white">
+              <section>
+                <Toolbar>
+                  <IconButton
+                    color="inherit"
+                    aria-label="open drawer"
+                    onClick={handleDrawerOpen}
+                    edge="start"
+                    sx={{
+                      marginRight: 5,
+                      ...(open && { display: "none" }),
+                    }}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                  <Typography noWrap component="div">
+                    <img
+                      src="../image/finvest-logo-1.png"
+                      alt=""
+                      className="w-[50%] hidden md:block md:w-[35%]"
+                    />
+                  </Typography>
+                </Toolbar>
+              </section>
+
+              <img
+                src="../image/finvest-logo-1.png"
+                alt=""
+                className=" md:hidden block w-[35%]"
+              />
+
+              <section className="md:flex hidden items-center gap-3 ">
+                <div className="flex items-center border-2 border-[#F9A403] p-2 rounded-xl gap-1">
+                  {/* <AccountBalanceWalletIcon /> */}
+                  <ManageAccountsIcon className="md:text-2xl text-lg" />
+                  <p className="text-">$0.00</p>
+                </div>
+                <section></section>
+              </section>
+            </div>
+          </AppBar>
+          <Drawer variant="permanent" open={open}>
+            <div className="flex pl-5 justify-between items-center">
+              <p>Finvest</p>
+              <DrawerHeader>
+                <IconButton onClick={handleDrawerClose}>
+                  {theme.direction === "rtl" ? (
+                    <div>
+                      <p>Finvest</p>
+                      <ChevronRightIcon />
+                    </div>
+                  ) : (
+                    <ChevronLeftIcon />
+                  )}
                 </IconButton>
-                <Typography noWrap component="div">
-                  <img
-                    src="../image/finvest-logo-1.png"
-                    alt=""
-                    className="w-[50%] hidden md:block md:w-[35%]"
-                  />
-                </Typography>
-              </Toolbar>
-            </section>
+              </DrawerHeader>
+            </div>
+            <Divider />
+            <List>
+              <Link to="/Dashboard">
+                <ListItem disablePadding sx={{ display: "block" }}>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <HomeIcon className="text-black" />
+                    </ListItemIcon>
+                    <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                      Home
+                    </ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+              <Link to="/investment/Invest-now">
+                <ListItem disablePadding sx={{ display: "block" }}>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <FaCoins className="w-5 h-5 text-black" />
+                    </ListItemIcon>
+                    <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                      Investments Plans
+                    </ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+              <Link to="/deposit-funds">
+                <ListItem disablePadding sx={{ display: "block" }}>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <AddCardIcon className="text-black" />
+                    </ListItemIcon>
+                    <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                      Deposit
+                    </ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+              <Link to="/withdraw-funds">
+                <ListItem disablePadding sx={{ display: "block" }}>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <FaHandHoldingUsd className="w-6 h-6 text-black" />
+                    </ListItemIcon>
+                    <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                      {" "}
+                      Withdraw
+                    </ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+            </List>
+            <Divider />
+            <List>
+              <ListItem disablePadding sx={{ display: "block" }}>
+                <ListItemButton
+                  sx={{
+                    minHeight: 48,
+                    justifyContent: open ? "initial" : "center",
+                    px: 2.5,
+                  }}
+                >
+                  <ListItemIcon
+                    sx={{
+                      minWidth: 0,
+                      mr: open ? 3 : "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <InboxIcon className="text-black" />
+                  </ListItemIcon>
+                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                    Transaction Logs
+                  </ListItemText>
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding sx={{ display: "block" }}>
+                <ListItemButton
+                  sx={{
+                    minHeight: 48,
+                    justifyContent: open ? "initial" : "center",
+                    px: 2.5,
+                  }}
+                >
+                  <ListItemIcon
+                    sx={{
+                      minWidth: 0,
+                      mr: open ? 3 : "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <SupportAgentIcon className="text-black" />
+                  </ListItemIcon>
+                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                    Support
+                  </ListItemText>
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding sx={{ display: "block" }}>
+                <ListItemButton
+                  sx={{
+                    minHeight: 48,
+                    justifyContent: open ? "initial" : "center",
+                    px: 2.5,
+                  }}
+                >
+                  <ListItemIcon
+                    sx={{
+                      minWidth: 0,
+                      mr: open ? 3 : "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LogoutIcon className="text-black" />
+                  </ListItemIcon>
+                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
+                    Logout
+                  </ListItemText>
+                </ListItemButton>
+              </ListItem>
+            </List>
+          </Drawer>
+   
+          <Box
+            component="main"
+            sx={{ flexGrow: 1, p: 3 }}
+            className="bg-black text-white"
+          >
+            <DrawerHeader />
 
-            <img
-              src="../image/finvest-logo-1.png"
-              alt=""
-              className=" md:hidden block w-[35%]"
-            />
-
-            <section className="md:flex hidden items-center gap-3 ">
-              <div className="flex items-center border-2 border-[#F9A403] p-2 rounded-xl gap-1">
-                {/* <AccountBalanceWalletIcon /> */}
-                <ManageAccountsIcon className="md:text-2xl text-lg" />
-                <p className="text-">$0.00</p>
-              </div>
-              <section></section>
-            </section>
-          </div>
-        </AppBar>
-        <Drawer variant="permanent" open={open}>
-          <div className="flex pl-5 justify-between items-center">
-            <p>Finvest</p>
-            <DrawerHeader>
-              <IconButton onClick={handleDrawerClose}>
-                {theme.direction === "rtl" ? (
-                  <div>
-                    <p>Finvest</p>
-                    <ChevronRightIcon />
-                  </div>
-                ) : (
-                  <ChevronLeftIcon />
-                )}
-              </IconButton>
-            </DrawerHeader>
-          </div>
-          <Divider />
-          <List>
-            <Link to="/Dashboard">
-              <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <HomeIcon className="text-black" />
-                  </ListItemIcon>
-                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                    Home
-                  </ListItemText>
-                </ListItemButton>
-              </ListItem>
-            </Link>
-            <Link to="/investment/Invest-now">
-              <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <FaCoins className="w-5 h-5 text-black" />
-                  </ListItemIcon>
-                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                    Investments Plans
-                  </ListItemText>
-                </ListItemButton>
-              </ListItem>
-            </Link>
-            <Link to="/deposit-funds">
-              <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <AddCardIcon className="text-black" />
-                  </ListItemIcon>
-                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                    Deposit
-                  </ListItemText>
-                </ListItemButton>
-              </ListItem>
-            </Link>
-            <Link to="/withdraw-funds">
-              <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <FaHandHoldingUsd className="w-6 h-6 text-black" />
-                  </ListItemIcon>
-                  <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                    {" "}
-                    Withdraw
-                  </ListItemText>
-                </ListItemButton>
-              </ListItem>
-            </Link>
-          </List>
-          <Divider />
-          <List>
-            <ListItem disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  <InboxIcon className="text-black" />
-                </ListItemIcon>
-                <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                  Transaction Logs
-                </ListItemText>
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  <SupportAgentIcon className="text-black" />
-                </ListItemIcon>
-                <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                  Support
-                </ListItemText>
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  <LogoutIcon className="text-black" />
-                </ListItemIcon>
-                <ListItemText sx={{ opacity: open ? 1 : 0 }}>
-                  Logout
-                </ListItemText>
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </Drawer>
-        <Box
-          component="main"
-          sx={{ flexGrow: 1, p: 3 }}
-          className="bg-black text-white"
-        >
-          <DrawerHeader />
-
-          {children}
+            {children}
+          </Box>
         </Box>
-      </Box>
+      </div>
+
+      <div className="block md:hidden">
+        <PersistentDrawerLeft />
+      </div>
     </div>
   );
 }

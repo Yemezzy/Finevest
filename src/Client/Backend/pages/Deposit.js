@@ -5,6 +5,7 @@ const Deposit = () => {
   return (
     <div>
       <MiniDrawer>
+        
         <div>
           <p className="md:px-0 px font-bold text-xl md:text-2xl md:pt-5 ">
             DEPOSIT
