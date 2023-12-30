@@ -321,7 +321,7 @@ const PersistentDrawerLef = ({ children }) => {
       </Drawer>
       <Main open={open} className="bg-black text-white">
         <DrawerHeader />
-      {/* <Dashboard/> */}
+      {children}
       </Main>
     </Box>
   );
